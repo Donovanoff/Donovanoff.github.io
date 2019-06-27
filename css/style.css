@@ -37,11 +37,7 @@ html {
           align-items: center;
 }
 
-.sidebar__top a {
-  text-decoration: none;
-}
-
-.sidebar__top a span {
+.sidebar__top span {
   padding-left: 15px;
   font-size: 24px;
   text-transform: uppercase;
@@ -70,6 +66,7 @@ html {
   color: #fff;
   font-family: sans-serif;
   text-transform: uppercase;
+  text-align: center;
   font-weight: bold;
   position: relative;
   overflow: hidden;
@@ -78,7 +75,6 @@ html {
 .sidebar nav a span {
   position: relative;
   z-index: 3;
-  padding-left: 50px;
 }
 
 .sidebar nav a:before {
@@ -504,7 +500,6 @@ html {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
-  outline: none;
 }
 
 .main__inner__body .payment {

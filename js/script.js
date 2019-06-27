@@ -1,5 +1,4 @@
 'use-strict';
-
 let sidebar = document.querySelector('.sidebar');
 const main = document.querySelector('.main');
 const wrapper = document.querySelector('.wrapper');
@@ -33,7 +32,7 @@ const calculateCost = () => {
     }
 
 
-    if(powerValue < 0 || powerValue > 9999){
+    if(powerValue < 0 || powerValue > 9900){
         cost.value = 'Неверное значение';
         return false;
     }
@@ -58,3 +57,22 @@ const setPowerValue = () => {
 
 slider.addEventListener('change',setPowerValue);
 slider.addEventListener('input',setPowerValue);
+
+$(document).ready(function(){
+    $('input[type="range"]').rangeslider({
+        polyfill: false,
+        rangeClass: 'rangeslider',
+        disabledClass: 'rangeslider--disabled',
+        horizontalClass: 'rangeslider--horizontal',
+        verticalClass: 'rangeslider--vertical',
+        fillClass: 'rangeslider__fill',
+        handleClass: 'rangeslider__handle',
+        onInit: function() {},
+        onSlide: function(position, value) {
+
+        },
+        onSlideEnd: function(position, value) {
+            setPowerValue();
+        }
+    });
+})
