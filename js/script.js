@@ -69,7 +69,7 @@ $(document).ready(function(){
         handleClass: 'rangeslider__handle',
         onInit: function() {},
         onSlide: function(position, value) {
-
+            setPowerValue();
         },
         onSlideEnd: function(position, value) {
             setPowerValue();

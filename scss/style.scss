@@ -29,14 +29,19 @@ html {
         display: flex;
         align-items: center;
 
-        span {
-            padding-left: 15px;
-            font-size: 24px;
-            text-transform: uppercase;
-            font-family: $mainFont;
-            color: $mainColor;
-            font-weight: bold;
+        a {
+            text-decoration: none;
+
+            span {
+                padding-left: 15px;
+                font-size: 24px;
+                text-transform: uppercase;
+                font-family: $mainFont;
+                color: $mainColor;
+                font-weight: bold;
+            }
         }
+
     }
 
     nav {
@@ -54,7 +59,6 @@ html {
             color: $mainColor;
             font-family: $mainFont;
             text-transform: uppercase;
-            text-align: center;
             font-weight: bold;
             position: relative;
             overflow: hidden;
@@ -62,6 +66,7 @@ html {
             span {
                 position: relative;
                 z-index: 3;
+                padding-left: 50px;
             }
 
             &:before {
@@ -440,6 +445,7 @@ html {
                     color: $mainColor;
                     text-transform: uppercase;
                     cursor: pointer;
+                    outline: none;
                 }
             }
 
@@ -477,4 +483,3 @@ html {
         }
     }
 }
-
